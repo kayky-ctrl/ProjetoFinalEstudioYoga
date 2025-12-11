@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Serenidade - Yoga</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .hero {
+            background-image: url("imgs/ImagemFundoComEfeito.png");
+            background-size: cover;
+            background-position: center bottom;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 255, 255, 0.8) 30%,
+                    rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imgs/logo.png" class="logo-icon"></img>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
+                <li><a href="aulaExperimental.html">Aula Experimental</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="btn-small">Agendar Aula</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Descubra o equilíbrio entre o corpo e mente</h1>
+                <p class="subtitle">Venha experimentar uma aula gratuita de yoga!</p>
+            </div>
+
+            <div class="hero-right">
+                <p>O yoga é um caminho completo para o bem-estar físico. Com a prática regular, você irá:</p>
+                <ul>
+                    <li>Melhorar sua flexibilidade, postura e equilíbrio.</li>
+                    <li>Fortalecer músculos profundos e estabilizadores.</li>
+                    <li>Reduzir dores corporais, especialmente nas costas e ombros.</li>
+                    <li>Aumentar seus níveis de energia e vitalidade.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-center">
+            <button class="btn-large">Agendar Aula</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <h2>©Estúdio Serenidade</h2>
+            <p>Rua da Tranquilidade, 123, Graça, Salvador/BA</p>
+            <p>(14) 99765-4312</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

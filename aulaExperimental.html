@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio Serenidade - Aula Experimental</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <style>
+
+        header{
+            position: relative;
+            background-color: var(--bg-light);
+        }
+
+        .form-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: var(--primary-dark, #2d4635);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            background-color: #fafafa;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background-color: #fff;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            color: var(--primary-color);
+            font-family: var(--font-serif);
+            padding: 0 10px;
+            font-weight: 600;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-sans);
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-family: var(--font-serif);
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fcf9;
+        }
+
+        tr:hover {
+            background-color: #eef5f0;
+        }
+
+        .center-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-family: var(--font-serif);
+            color: var(--primary-color);
+            margin: 40px 0 20px 0;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imgs/logo.png" class="logo-icon" alt="Logo Serenidade">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
+                <li><a href="aulaExperimental.html" class="active">Aula Experimental</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="btn-small">Agendar Aula</a>
+    </header>
+
+    <main>
+        <section class="title-section">
+            <h1>AULA EXPERIMENTAL</h1>
+        </section>
+
+        <section class="container card">
+            <div class="card-header">
+                <h2>Agende sua prática</h2>
+                <p class="subtitle">Preencha o formulário abaixo e entraremos em contato</p>
+            </div>
+
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nome Completo:</label>
+                        <input type="text" required placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-mail:</label>
+                        <input type="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Telefone:</label>
+                        <input type="tel" required placeholder="(DDD) 99999-9999">
+                    </div>
+
+                    <fieldset>
+                        <legend>Melhor dia(s):</legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Seg</label>
+                            <label><input type="checkbox"> Ter</label>
+                            <label><input type="checkbox"> Qua</label>
+                            <label><input type="checkbox"> Qui</label>
+                            <label><input type="checkbox"> Sex</label>
+                            <label><input type="checkbox"> Sáb</label>
+                            <label><input type="checkbox"> Dom</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Período de preferência:</legend>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Manhã</label>
+                            <label><input type="checkbox"> Tarde</label>
+                            <label><input type="checkbox"> Noite</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label>Observações:</label>
+                        <textarea rows="4" placeholder="Tem alguma lesão ou dúvida? Conte para nós."></textarea>
+                    </div>
+
+                    <div class="center-btn">
+                        <button type="submit" class="btn-dark">Enviar Solicitação</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="container">
+            <h2 class="section-subtitle">Nossos Horários de Aulas</h2>
+            
+            <div class="card">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Horário</th>
+                                <th>Segunda</th>
+                                <th>Terça</th>
+                                <th>Quarta</th>
+                                <th>Quinta</th>
+                                <th>Sexta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>07:00</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>Vinyasa Flow</td></tr>
+                            <tr><td>08:30</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>Hatha Yoga</td></tr>
+                            <tr><td>18:00</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>-</td></tr>
+                            <tr><td>19:30</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>Hatha Yoga</td><td>Vinyasa Flow</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="center-btn">
+                    <a href="#" class="btn-outline">Baixar grade completa (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>©Estúdio Serenidade</h2>
+            <p>Rua da Tranquilidade, 123, Graça, Salvador/BA</p>
+            <p>(14) 99765-4312</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
