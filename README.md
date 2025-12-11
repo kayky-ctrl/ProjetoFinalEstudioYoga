@@ -67,7 +67,7 @@ O site foi desenhado seguindo a técnica **Mobile First**:
 
 1.  Clone este repositório:
     ```bash
-    git clone [https://github.com/kayky-ctrl/ProjetoFinalEstudioYoga.git](https://github.com/kayky-ctrl/ProjetoFinalEstudioYoga.git)
+    git clone https://github.com/kayky-ctrl/ProjetoFinalEstudioYoga.git
     ```
 2.  Abra a pasta do projeto no VS Code.
 3.  Abra o arquivo `index.html` no seu navegador ou utilize a extensão **Live Server**.
