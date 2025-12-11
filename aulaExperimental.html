@@ -167,7 +167,7 @@
                 <p class="subtitle">Preencha o formulário abaixo e entraremos em contato</p>
             </div>
 
-            <form>
+            <form id="formAgendamento">
                 <div class="form-grid">
                     <div class="form-group">
                         <label>Nome Completo:</label>
@@ -264,6 +264,35 @@
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
     </footer>
+
+    <script>
+        const formulario = document.getElementById('formAgendamento');
+
+        formulario.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const inputNome = formulario.querySelector('input[type=text]');
+            const nome = inputNome.value;
+
+            const botao = formulario.querySelector('button');
+            const textoOriginal = botao.innerText;
+
+            botao.innerText = 'Carregando...';
+            botao.style.backgroundColor = '#ccc';
+            botao.disabled = true;
+
+            setTimeout(() => {
+                alert(`Namastê, ${nome} sua mensagem foi enviada com sucesso`);
+
+                botao.innerText = textoOriginal;
+                botao.style.backgroundColor = '';
+                botao.disabled = false;
+                formulario.reset();
+
+            }, 1000)
+
+        })
+    </script>
 
 </body>
 </html>
