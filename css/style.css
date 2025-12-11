@@ -271,9 +271,12 @@ footer {
 @media (max-width: 900px) {
   header {
     flex-direction: column;
-    padding: 10px 5%;
-    background: rgba(255, 255, 255, 0.95);
-    justify-content: space-between;
+    height: auto;
+    min-height: auto;
+    gap: 20px;
+    padding: 20px 5%;
+    position: relative;
+    background-color: var(--bg-light, #f0f6ff);
   }
 
   .logo-icon {
@@ -282,19 +285,34 @@ footer {
   }
 
   nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    position: static;
+    transform: none;
+    width: 100%;
+    left: auto;
   }
 
   nav ul {
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
-    font-size: 0.8rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0;
   }
 
+  nav a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+  }
+
+  .btn-small,
+  .btn-outline,
+  header a.btn-dark {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
   .hero-content {
     flex-direction: column;
     padding-top: 140px;
